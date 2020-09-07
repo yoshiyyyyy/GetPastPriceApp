@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <h1>ヤフオクの過去5年分の落札価格を取得するアプリ</h1>
+    <div id="formBlock" class="alias1">
+      <form id="searchForm" method="post" name="search" action="/search">
+        <div id="selectable">
+          <div id="search_box_form">
+            <select id="c_id" class="selectable2" name="genre"><option value="">すべてのカテゴリ</option>
+              <option value="23336">コンピュータ</option>
+              <option value="23632">家電・AV・カメラ</option>
+              <option value="21600">本・雑誌</option>
+              <option value="22152">音楽</option>
+              <option value="21964">映画・ビデオ</option>
+              <option value="25464">おもちゃ・ゲーム</option>
+              <option value="24242">ホビー・カルチャー</option>
+              <option value="20000">アンティーク</option>
+              <option value="20060">コミック・アニメグッズ</option>
+              <option value="2084032594">タレントグッズ</option>
+              <option value="23000">ファッション</option>
+              <option value="23140">アクセサリー・時計</option>
+              <option value="24202">キッズ・ベビー</option>
+              <option value="42177">ビューティ・健康 </option>
+              <option value="23976">食品・飲料</option>
+              <option value="26318">自動車・バイク</option>
+              <option value="24698">スポーツ・レジャー</option>
+              <option value="22896">事務・店舗用品</option>
+              <option value="2084060731">不動産</option>
+              <option value="24198">住まい・インテリア</option>
+              <option value="26086">花・園芸</option>
+              <option value="2084055844">ペット・いきもの</option>
+              <option value="2084043920">チケット・金券</option>
+              <option value="2084217893">チャリティ</option>
+              <option value="26084">その他</option></select><span class="selectAlt selectable2Val">カテゴリを選択してください</span>
+            <ul id="ulSelectList2" class="selectList" style="display:none;">
+              <li>
+                <a class="selected" data-value="nodata" href="#">すべてのカテゴリ</a>
+              </li>
+              <li>
+                <a data-value="23336" href="#">コンピュータ</a>
+              </li>
+              <li>
+                <a data-value="23632" href="#">家電・AV・カメラ</a>
+              </li>
+              <li>
+                <a data-value="21600" href="#">本・雑誌</a>
+              </li>
+              <li>
+                <a data-value="22152" href="#">音楽</a>
+              </li>
+              <li>
+                <a data-value="21964" href="#">映画・ビデオ</a>
+              </li>
+              <li>
+                <a data-value="25464" href="#">おもちゃ・ゲーム</a>
+              </li>
+              <li>
+                <a data-value="24242" href="#">ホビー・カルチャー</a>
+              </li>
+              <li>
+                <a data-value="20000" href="#">アンティーク</a>
+              </li>
+              <li>
+                <a data-value="20060" href="#">コミック・アニメグッズ</a>
+              </li>
+              <li>
+                <a data-value="2084032594" href="#">タレントグッズ</a>
+              </li>
+              <li>
+                <a data-value="23000" href="#">ファッション</a>
+              </li>
+              <li>
+                <a data-value="23140" href="#">アクセサリー・時計</a>
+              </li>
+              <li>
+                <a data-value="24202" href="#">キッズ・ベビー</a>
+              </li>
+              <li>
+                <a data-value="42177" href="#">ビューティ・健康</a>
+              </li>
+              <li>
+                <a data-value="23976" href="#">食品・飲料</a>
+              </li>
+              <li>
+                <a data-value="26318" href="#">自動車・バイク</a>
+              </li>
+              <li>
+                <a data-value="24698" href="#">スポーツ・レジャー</a>
+              </li>
+              <li>
+                <a data-value="22896" href="#">事務・店舗用品</a>
+              </li>
+              <li>
+                <a data-value="2084060731" href="#">不動産</a>
+              </li>
+              <li>
+                <a data-value="24198" href="#">住まい・インテリア</a>
+              </li>
+              <li>
+                <a data-value="26086" href="#">花・園芸</a>
+              </li>
+              <li>
+                <a data-value="2084055844" href="#">ペット・いきもの</a>
+              </li>
+              <li>
+                <a data-value="2084043920" href="#">チケット・金券</a>
+              </li>
+              <li>
+                <a data-value="2084217893" href="#">チャリティ</a>
+              </li>
+              <li>
+                <a data-value="26084" href="#">その他</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="searchFrame">
+          <div><input type="search" name="search_word" id="searchInput2" style="width: 15%" placeholder="商品名を入力してください" maxlength="40" class="searchInput" /></div>
+          <div><input type="search" name="file_name" id="fileName" style="width: 13%" placeholder="保存するときのファイル名" maxlength="40" class="fileName" />.csv</div>
+          <div><button id="searchButton" class="searchButton" type="submit"><span>取得</span></button></div>
+        </div>
+        <div>
+        </div>>
+      </form>
+    </div>
+    </body>
+</html>
