@@ -28,7 +28,7 @@ class GenerateCsv :
                         return soup
                         
 
-                for year in range(2015,2021):
+                for year in range(2015,2016):
                         for month in range(1,13):
                                 if month <= 9:
                                         month = str(0) + str(month)
@@ -58,6 +58,10 @@ class GenerateCsv :
                                                         csvlist.append([int(str(year)+str(month)),int(i),int(l),k]) 
 
 
+
                 with open("./app/csv_files/%s.csv" % self.file_name, 'w' ) as f:
                         writecsv = csv.writer(f)
                         writecsv.writerows(csvlist)
+                # with open('./csv_files/yotsuboshihinakabuto.csv', 'w') as f:
+                # writecsv = csv.writer(f)
+                # writecsv.writerows(csvlist)
