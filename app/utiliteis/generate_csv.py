@@ -58,6 +58,6 @@ class GenerateCsv :
                                                         csvlist.append([int(str(year)+str(month)),int(i),int(l),k]) 
 
 
-                with open("app/csv_files/%s.csv" % self.file_name, 'w' ) as f:
+                with open("./app/csv_files/%s.csv" % self.file_name, 'w' ) as f:
                         writecsv = csv.writer(f)
                         writecsv.writerows(csvlist)
